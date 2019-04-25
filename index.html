@@ -8,15 +8,54 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!--styles -->
+  <style>
+    body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url('image/maptitude.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    overflow: hidden;
+    }
+    .body_border {
+        border-style: dashed;
+        border-width: 3px;
+        border-color: red;
+        /*controle the height */
+        height:100vh;
+    }
+    .wrapHeight{
+        height: 100%;
+    }
+    /*transperant color*/
+    .bgColor {
+        background-color: rgba(245, 245, 245, 1);
+        opacity: .4;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
+<div class="container-fluid body_border">
 
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p> 
-  
+    <div class="row wrapHeight">
+      <div class="col-sm-8 bg-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="col-sm-4 bg-warning bgColor">
+        <p>Nav<p>
+        <p>Map<p>
+      </div>
+    </div>
+
 </div>
+
+
 
 </body>
 </html>
